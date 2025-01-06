@@ -1,5 +1,6 @@
 {
   "name": "react-swc-ts-template",
+  "author": "NeuroWhAI",
   "private": true,
   "version": "0.1.0",
   "type": "module",
