@@ -1,5 +1,6 @@
 import './MainPage.css';
 import reactLogo from '@/assets/react.svg';
+import { Button, Code, Flex, Heading, Link, Text } from '@radix-ui/themes';
 import { useState } from 'react';
 import viteLogo from '/vite.svg';
 
@@ -7,25 +8,25 @@ export function MainPage() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
+    <Flex direction="column" gap="6" align="center" p="8">
+      <Flex direction="row" gap="4" justify="center">
+        <Link href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
+        </Link>
+        <Link href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+        </Link>
+      </Flex>
+      <Heading>Vite + React</Heading>
+      <Flex direction="column" gap="2" align="center">
+        <Button onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
+        <Text as="p">
+          Edit <Code>src/App.tsx</Code> and save to test HMR
+        </Text>
+      </Flex>
+      <Text as="p" size="1" color="gray">
+        Click on the Vite and React logos to learn more
+      </Text>
+    </Flex>
   );
 }
