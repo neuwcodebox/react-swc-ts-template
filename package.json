@@ -33,6 +33,6 @@
     "vite": "^6.0.5"
   },
   "lint-staged": {
-    "src/**/*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc,tsx,jsx,css}": ["biome check --fix --no-errors-on-unmatched"]
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc,tsx,jsx,css}": ["biome check --fix --no-errors-on-unmatched"]
   }
 }
