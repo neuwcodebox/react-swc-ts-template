@@ -1,3 +1,3 @@
-# React + TypeScript + Vite Boilerplate
+# 🚀 React TypeScript Boilerplate
 
 Modified for simple app development.
