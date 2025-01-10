@@ -4,5 +4,8 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tsconfigPaths(), react()],
+  plugins: [react(), tsconfigPaths()],
+  resolve: {
+    alias: [{ find: '@', replacement: '/src' }],
+  },
 });

@@ -1,7 +1,7 @@
 import './App.css';
+import { MainPage } from '@/pages/MainPage';
 import { Flex, Heading } from '@radix-ui/themes';
 import { Route, Switch } from 'wouter';
-import { MainPage } from './pages/MainPage';
 
 function App() {
   return (
