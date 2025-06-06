@@ -1,6 +1,7 @@
 import './MainPage.css';
 import reactLogo from '@/assets/react.svg';
 import { Button, Code, Flex, Heading, Link, Text } from '@radix-ui/themes';
+import { Pencil, Plus } from 'lucide-react';
 import { useState } from 'react';
 import viteLogo from '/vite.svg';
 
@@ -19,9 +20,11 @@ export function MainPage() {
       </Flex>
       <Heading>Vite + React</Heading>
       <Flex direction="column" gap="2" align="center">
-        <Button onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
+        <Button onClick={() => setCount((count) => count + 1)}>
+          <Plus className="inline-icon" /> count is {count}
+        </Button>
         <Text as="p">
-          Edit <Code>src/App.tsx</Code> and save to test HMR
+          <Pencil className="inline-icon" /> Edit <Code>src/App.tsx</Code> and save to test HMR
         </Text>
       </Flex>
       <Text as="p" size="1" color="gray">

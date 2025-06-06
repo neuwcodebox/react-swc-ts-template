@@ -24,3 +24,9 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+.inline-icon {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: text-top;
+}
