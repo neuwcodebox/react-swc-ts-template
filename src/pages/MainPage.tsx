@@ -1,8 +1,8 @@
 import './MainPage.css';
-import reactLogo from '@/assets/react.svg';
 import { Button, Code, Flex, Heading, Link, Text } from '@radix-ui/themes';
 import { Pencil, Plus } from 'lucide-react';
 import { useState } from 'react';
+import reactLogo from '@/assets/react.svg';
 import viteLogo from '/vite.svg';
 
 export function MainPage() {
